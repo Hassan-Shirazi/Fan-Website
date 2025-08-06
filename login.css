@@ -1,0 +1,245 @@
+body {
+    background: #ADA996; 
+background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); 
+background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+.login-box {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    overflow: hidden;
+    max-width: 95%;
+    margin: 20px auto;
+}
+
+
+.left-box {
+    flex: 1;
+    padding: 40px;
+    background: linear-gradient(to right, #93ccf354, #59656974); 
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+}
+
+.left-box h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    line-height: 1.2;
+    color: black;
+}
+
+.left-box p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: black;
+}
+
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    color: black;
+}
+
+.logo {
+    margin-right: 10px;
+    color: white; 
+    font-size: 70px;
+    color: black;
+}
+
+.logo-text {
+    font-weight: bold;
+    color: black;
+}
+
+
+.right-box {
+    flex: 1;
+    padding: 40px;
+}
+
+.right-box h2 {
+    font-size: 2em;
+    margin-bottom: 25px;
+    color: #333;
+    text-align: center;
+}
+
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1em;
+    transition: border-color 0.2s ease;
+}
+
+.form-group input[type="email"]:focus,
+.form-group input[type="password"]:focus {
+    outline: none;
+    border-color: #2980B9;
+    box-shadow: 0 0 6px rgba(41, 128, 185, 0.3);
+}
+
+button {
+    background-color: #2980B9;
+    color: white;
+    padding: 16px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.1em;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #21618C;
+}
+
+.signup-link {
+    text-align: center;
+    margin-top: 25px;
+    color: #777;
+    font-size: 0.9em;
+}
+
+.signup-link a {
+    color: #2980B9;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+}
+
+.remember-me input[type="checkbox"] {
+    margin-right: 5px;
+    width: auto;
+}
+
+.remember-forgot a {
+    color: #2980B9;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+
+.fa {
+    margin-right: 10px;
+    color: #888;
+}
+
+@media (max-width: 992px) {
+    .login-box {
+        flex-direction: column;
+    }
+
+    .left-box {
+        padding: 30px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .left-box h1 {
+        font-size: 2em;
+    }
+
+    .left-box p {
+        font-size: 1em;
+    }
+
+    .right-box {
+        padding: 30px;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .left-box {
+        padding: 20px;
+    }
+
+    .right-box {
+        padding: 20px;
+    }
+
+    .right-box h2 {
+        font-size: 1.75em;
+    }
+
+    .form-group label {
+        font-size: 0.95em;
+    }
+
+    .form-group input[type="email"],
+    .form-group input[type="password"] {
+        padding: 12px;
+        font-size: 0.95em;
+    }
+
+    button {
+        padding: 14px 20px;
+        font-size: 1em;
+    }
+}

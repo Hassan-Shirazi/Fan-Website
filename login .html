@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xpert Fan - Login</title>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div data-aos="fade-up" data-aos-duration="1000" class="container">
+        <div class="login-box">
+
+            <div class="left-box">
+                <h1>Welcome Back to Xpert Fan!</h1>
+                <p>Login to access exclusive content, connect with our community, and manage your fan preferences.  Let's get you back in the breeze!</p>
+                <div class="logo-container">
+                    <i class="fas fa-fan logo"></i>
+                    <span class="logo-text">Xpert Fan</span>
+                </div>
+           
+            </div>
+
+            <div class="right-box">
+                <h2>Login to Your Account</h2>
+                <form id="login-form" action="#" method="POST">
+
+                    <div class="form-group">
+                        <label for="email"><i class="fas fa-envelope"></i> Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password"><i class="fas fa-lock"></i> Password</label>
+                        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="remember-forgot">
+                            <label class="remember-me">
+                                <input type="checkbox" id="remember" name="remember"> Remember me
+                            </label>
+                            <a href="sign up.html">Forgot Password?</a>
+                        </div>
+                    </div>
+
+                    <a href="Website.html"><button style="    background: linear-gradient(to right, #93ccf354, #59656974); color: black;" type="submit">Login</button></a>
+
+                    <div class="signup-link">
+                        Don't have an account? <a href="sign up.html">Sign Up</a>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+<script>
+    AOS.init();
+</script>
+</body>
+</html>

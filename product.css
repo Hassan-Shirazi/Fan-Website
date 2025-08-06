@@ -1,0 +1,175 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f8f8f8;
+        }
+
+        .qw1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .qw2 {
+            display: flex;
+            align-items: center;
+            margin-left: 10px;
+        }
+
+        .qw2 img {
+            width: 100px;
+            height: auto;
+        }
+
+        .qw3 {
+            display: flex;
+            list-style: none;
+        }
+
+        .qw3 li {
+            margin: 0 10px;
+            opacity: 0;
+            transform: translateY(-10px);
+            animation: slideIn 0.5s ease-in-out forwards;
+        }
+
+        .qw3 a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            position: relative;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .qw3 a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 0%;
+            height: 2px;
+            background-color: black;
+            transition: width 0.3s ease-in-out;
+        }
+
+        .qw3 a:hover {
+            color: #2980B9;
+        }
+
+        .qw3 a:hover::after {
+            width: 100%;
+        }
+
+        .qw4 {
+            display: flex;
+            gap: 10px;
+        }
+
+        .qw5 {
+            padding: 8px 15px;
+            border: 2px solid;
+            border-radius: 50px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .qw6 {
+            color: #2980B9;
+            border-color: #2980B9;
+        }
+
+        .qw6:hover {
+            background-color: #2980B9;
+            color: white;
+        }
+
+        .qw7 {
+            color: black;
+            border-color: black;
+        }
+
+        .qw7:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .qw8 {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .qw8 div {
+            width: 30px;
+            height: 3px;
+            background-color: black;
+            margin: 5px 0;
+        }
+
+        @media (max-width: 768px) {
+            .qw3 {
+                display: none;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                flex-direction: column;
+                background-color: white;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                padding: 10px 0;
+                text-align: center;
+            }
+
+            .qw3.active {
+                display: flex;
+            }
+
+            .qw3 li {
+                padding: 10px 0;
+            }
+
+            .qw4 {
+                display: none;
+            }
+
+            .qw8 {
+                display: flex;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        footer {
+    background-color: rgba(136, 146, 156, 0.773);
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+    padding-bottom: 40px;
+    color: black;
+    font-size: larger;
+    font-weight: bold;
+    justify-content: center;
+}

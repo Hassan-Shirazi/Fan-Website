@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xpert Fan - Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="signup.css">
+</head>
+<body>
+
+    <div  data-aos="fade-up" data-aos-duration="1000" class="container">
+        <div class="signup-box">
+
+            <div class="left-box">
+                <h1>Welcome to the Xpert Fan Community!</h1>
+                <p>Unlock expert insights, connect with fellow fan enthusiasts, and stay cool with the latest news, tips, and exclusive deals on stand, Celling, and ceiling fans!</p>
+                <div class="logo-container">
+                  <i class="fas fa-fan logo"></i>
+                  <span class="logo-text">Xpert Fan</span>
+                </div>
+            </div>
+
+            <div class="right-box">
+                <h2>Create Your Account</h2>
+                <form id="signup-form" action="#" method="POST">
+
+                    <div class="form-group">
+                        <label for="name"><i class="fas fa-user"></i> Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email"><i class="fas fa-envelope"></i> Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password"><i class="fas fa-lock"></i> Password</label>
+                        <input type="password" id="password" name="password" placeholder="Create a strong password" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirm_password"><i class="fas fa-lock"></i> Confirm Password</label>
+                        <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm your password" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="fan_type"><i class="fas fa-fan"></i> Favorite Fan Type</label>
+                        <select id="fan_type" name="fan_type">
+                            <option value="stand">Stand Fan</option>
+                            <option value="roof">Roof Fan</option>
+                            <option value="ceiling">Wall fan</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group terms-container">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">I agree to the <a href="#">Terms and Conditions</a></label>
+                    </div>
+
+                    <a href="Website.html"><button style="  color: black;     background: linear-gradient(to right, #93ccf354, #59656974); " type="submit">Sign Up</button></a>
+
+                    <div class="login-link">
+                        Already have an account? <a href="login .html">Log In</a>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+<script>
+    AOS.init();
+</script>
+</body>
+</html>

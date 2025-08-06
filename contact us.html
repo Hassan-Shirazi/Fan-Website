@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xpert Fan - Contact us</title>
+</head>
+<body>
+    <link rel="stylesheet" href="contact.css">
+<nav class="qw1">
+    <div class="qw2">
+        <a href="#"><img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/fan/b/w/l/era-fancy-brown-50-1-ceiling-fan-1200-xpert-original-imagqvrr2yshuax4.jpeg?q=90&crop=false" alt="Logo"></a>
+    </div>
+    <ul class="qw3">
+        <li style="animation-delay: 0.1s;"><a href="Website.html">Home</a></li>
+        <li style="animation-delay: 0.2s;"><a href="Product.html">Products</a></li>
+        <li style="animation-delay: 0.3s;"><a href="feedback.html">Feedback</a></li>
+        <li style="animation-delay: 0.4s;"><a href="contact us.html">Contact Us</a></li>
+        <li style="animation-delay: 0.5s;"><a href="About us.html">About Us</a></li>
+    </ul>
+    <div class="qw4">
+        <a href="sign up.html" class="qw5 qw6">Sign Up</a>
+        <a href="login .html" class="qw5 qw7">Log in</a>
+    </div>
+    <div class="qw8" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</nav>
+<script>
+    function toggleMenu() {
+        document.querySelector('.qw3').classList.toggle('active');
+    }
+</script>
+<br><br><br><br><br><br>
+    <main>
+        <section id="contact-form">
+            <h2>Contact Us</h2>
+            <p style="text-align: center;">We'd love to hear from you!  Please use the form below to send us a message.</p>
+
+            <form action="#" method="POST"> 
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input placeholder="Enter Your Name" type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input placeholder="Enter Your Email" type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input placeholder="Enter Your Subject" type="text" id="subject" name="subject" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea placeholder="Write Your Message Here...!" id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <a style="text-decoration: none;" href="Website.html"><button style="  background: linear-gradient(to right, #93ccf354, #59656974); color: black;" type="submit">Send Message</button></a>
+           
+            </form>
+        </section>
+
+        <section  data-aos="fade-up" data-aos-duration="1000" id="contact-info">
+            <h2>Other Ways to Reach Us</h2>
+            <ul>
+                <li><strong>Email:</strong> <a href="">XpertFan@gmail.com</a></li>
+                <li><strong>Phone:</strong> 555 888 999 1</li>
+                <li><strong>Address:</strong> Pakistan</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Xpert Fan. All rights reserved.</p>
+    </footer>
+</body>
+</html>

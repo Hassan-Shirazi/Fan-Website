@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Xpert Fan - Feedback</title>
+<link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+    <nav class="qw1">
+        <div class="qw2">
+            <a href="#"><img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/fan/b/w/l/era-fancy-brown-50-1-ceiling-fan-1200-xpert-original-imagqvrr2yshuax4.jpeg?q=90&crop=false" alt="Logo"></a>
+        </div>
+        <ul class="qw3">
+            <li style="animation-delay: 0.1s;"><a href="Website.html">Home</a></li>
+            <li style="animation-delay: 0.2s;"><a href="Product.html">Products</a></li>
+            <li style="animation-delay: 0.3s;"><a href="feedback.html">Feedback</a></li>
+            <li style="animation-delay: 0.4s;"><a href="contact us.html">Contact Us</a></li>
+            <li style="animation-delay: 0.5s;"><a href="About us.html">About Us</a></li>
+        </ul>
+        <div class="qw4">
+            <a href="sign up.html" class="qw5 qw6">Sign Up</a>
+            <a href="login .html" class="qw5 qw7">Log in</a>
+        </div>
+        <div class="qw8" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+
+<br><br><br><br>
+    <main>
+       
+        <section class="feedback-section">
+            <div class="container">
+                <div class="page-title">
+                    <h2>Customer Feedback</h2>
+                    <p style="font-size: larger;">We value your opinion! Please share your thoughts about our products.</p>
+                </div>
+
+                <form class="feedback-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input placeholder="Enter Your Name" type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input placeholder="Enter Your Email" type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input placeholder="Enter Your Ph!" type="tel" id="phone" name="phone">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Product Type</label>
+                        <div class="product-type">
+                            <div class="product-option">
+                                <input type="radio" id="stand-fan" name="product-type" value="stand-fan" checked>
+                                <label for="stand-fan">Stand Fans</label>
+                            </div>
+                            <div class="product-option">
+                                <input type="radio" id="roof-fan" name="product-type" value="roof-fan">
+                                <label for="roof-fan">Ceiling Fans</label>
+                            </div>
+                            <div class="product-option">
+                                <input type="radio" id="Wall-fan" name="product-type" value="Wall-fan">
+                                <label for="Wall-fan">Bracket Fans</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="model">Model Number (if known)</label>
+                        <input type="text" id="model" name="model">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="purchase-date">Purchase Date</label>
+                        <input type="date" id="purchase-date" name="purchase-date">
+                    </div>
+
+                    <div class="form-group rating-group">
+                        <label>How would you rate our product?</label>
+                        <div class="stars">
+                            <input type="radio" id="star5" name="rating" value="5">
+                            <label for="star5"></label>
+                            <input type="radio" id="star4" name="rating" value="4">
+                            <label for="star4"></label>
+                            <input type="radio" id="star3" name="rating" value="3">
+                            <label for="star3"></label>
+                            <input type="radio" id="star2" name="rating" value="2">
+                            <label for="star2"></label>
+                            <input type="radio" id="star1" name="rating" value="1">
+                            <label for="star1"></label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="feedback">Your Feedback</label>
+                        <textarea placeholder="Enter Your Feedback Here........!" id="feedback" name="feedback" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="improvements">Any suggestions for improvements?</label>
+                        <textarea placeholder="if you have any suggestions for improvements you can write here.......!" id="improvements" name="improvements"></textarea>
+                    </div>
+
+                    <button style="  background: linear-gradient(to right, #93ccf354, #59656974); color: black;" type="submit">Submit Feedback</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Xpert Fan. All Rights Reserved.</p>
+            <p>Quality fans for every home and office</p>
+        </div>
+    </footer>
+   <script>
+         function toggleMenu() {
+            document.querySelector('.qw3').classList.toggle('active');
+        }
+</script>
+</body>
+</html>
